@@ -1,61 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akshar Gupta | Portfolio</title>
+  <title>Akshar Gupta</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
   <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <h1>Akshar Gupta</h1>
-    <p>B.Tech CSE Student | Web Developer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Akshar, a Computer Science student at Lovely Professional University (Batch 2029).  
-    I am passionate about web development and building creative projects to showcase my skills.</p>
-  </section>
+  <!--
+    - #MAIN
+  -->
 
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (Learning)</li>
-      <li>Python (Learning)</li>
-    </ul>
-  </section>
+  <main>
 
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Portfolio Website</h3>
-      <p>This is my personal portfolio website built with HTML & CSS.</p>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./images/my-avatar.png" alt="Akshar Gupta" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Akshar Gupta">Akshar Gupta</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:akshargupta2006@gmail.com" class="contact-link">akshargupta2006@ <br> gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919258887187" class="contact-link">+91 9258887187</a>
+            </div>
+
+          </li>
+
+          
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Meerut, Uttar Pradesh, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/akshar-gupta" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/gupta-akshar" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://instagram.com/akshar_gupta__" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a B.Tech Computer Science student at Lovely Professional University, specializing in front-end and full-stack development. I create responsive, efficient, and user-friendly websites using HTML, CSS, JavaScript, React.js, and the MERN stack, focusing on clean, maintainable code.
+          </p>
+          <p>
+            I enjoy solving complex problems and turning them into functional solutions. My work spans AI & Machine Learning projects, algorithmic challenges, and optimizing performance to deliver intuitive interfaces. I continuously explore new frameworks and tools to enhance my skills and build high-quality applications.
+          </p>
+          <p>
+            I have developed projects ranging from small interactive web components to full-stack applications and Android apps. My goal is to combine technical precision with modern design principles, creating practical and polished solutions that offer a seamless user experience.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+  <h3 class="h3 service-title">What I'm doing</h3>
+
+  <ul class="service-list">
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./images/icon-dev.svg" alt="Web Development icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Full-Stack Web Development</h4>
+        <p class="service-item-text">
+          I develop responsive, high-performance web apps using the MERN stack, Tailwind, and Bootstrap — connecting clean UI with powerful backend logic.
+        </p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./images/microchip-ai.png" alt="AI & ML icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">AI & Machine Learning</h4>
+        <p class="service-item-text">
+          I design and train models in Python for AI, ML, and Deep Learning projects, applying data-driven insights to real-world applications.
+        </p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./images/chart-tree.png" alt="DSA icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Data Structures & Algorithms</h4>
+        <p class="service-item-text">
+          I solve algorithmic problems in Java, focusing on time complexity, optimization, and strong problem-solving fundamentals.
+        </p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./images/icon-app.svg" alt="App Development icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">App & Backend Development</h4>
+        <p class="service-item-text">
+          I build scalable backends and Android apps integrating APIs and databases for seamless, connected user experiences.
+        </p>
+      </div>
+    </li>
+
+  </ul>
+</section>
+
+
+
+        
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Lovely Professional University</h4>
+
+              <span>2025 — 2029 <i>(Pursuing)</i></span>
+
+              <p class="timeline-text">
+                B.Tech in Computer Science and Engineering <br>
+                Coursework: Web Development, Data Structures, Database Systems, Object-Oriented Programming
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Skills</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Frontend</h4>
+              <ul class="timeline-text">
+                <li>HTML, CSS, JavaScript</li>
+                <li>Bootstrap, Tailwind CSS</li>
+                <li>React.js</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Backend</h4>
+              <ul class="timeline-text">
+                <li>Node.js</li>
+                <li>Express.js</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Database</h4>
+              <ul class="timeline-text">
+                <li>MongoDB</li>
+                <li>MySQL</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Version Control</h4>
+              <ul class="timeline-text">
+                <li>Git, GitHub</li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Others</h4>
+              <ul class="timeline-text">
+                <li>VS Code, Postman</li>
+              </ul>
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+         
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+          </div>
+
+        </section>
+
+      </article>
+
+
+
+
+
+     
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+        </section>
+
+      </article>
+
     </div>
-    <div class="card">
-      <h3>Hackathon Projects</h3>
-      <p>Upcoming web apps and coding projects from hackathons.</p>
-    </div>
-  </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:akshargupta2006@gmail.com">akshargupta2006@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/akshar-gupta">akshar-gupta</a></p>
-    <p>GitHub: <a href="https://github.com/gupta-akshar">gupta-akshar</a></p>
-  </section>
+  </main>
 
-  <footer>
-    <p>© 2025 Akshar Gupta. All Rights Reserved.</p>
-  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
-</html>
 
+</html>
